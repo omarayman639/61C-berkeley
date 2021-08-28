@@ -1,21 +1,22 @@
+// prints the number of bytes in a string
 
 #include <stdio.h>
 
-// int bytes_in_string(char *x[])
-// {
-// }
-
-int main()
+int bytes_in_string(char x[])
 {
-   char x[] = "test string";
-   int count = 0;
    int i = 0;
-
+   int count = 0;
    while (x[i] != 0)
    {
       count++;
       i++;
    }
-   printf("the string '%s' has %d bytes\n", x, count);
+   return count;
+}
+
+int main()
+{
+   char str[] = "test string";
+   printf("bytes in string is %d\n", bytes_in_string(str));
    return 0;
 }

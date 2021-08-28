@@ -1,3 +1,5 @@
+// Increments the value of an int outside of a function by one.
+
 #include <stdio.h>
 
 int increment_1(int *x)
