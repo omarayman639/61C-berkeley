@@ -1,0 +1,16 @@
+# What are the instructions to branch to label: on each of the following conditions?
+
+1) $s0 < $s1
+   slt $t0, $s0, $s1
+   bne $t0, $0, label
+
+2) $s0 <= $s1
+   slt $t0, $s1, $s0
+   beq $t0, $0, label
+
+3) $s0 > 1 
+   sltiu $t0, $s0, 2 
+   beq $t0, $0, label
+
+4) $s0 >= 1
+   bgtz $s0, label
